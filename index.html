@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YC Startup Tracker - Real-Time Database (5,500+ Startups)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                <span id="theme-icon">🌙</span>
+                <span id="theme-text">Dark</span>
+            </button>
+            <div class="header-content">
+                <h1>🚀 Y Combinator Startup Tracker</h1>
+                <p class="subtitle">Real-time data from 5,500+ YC-backed startups • Updates daily</p>
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-value" id="total-startups">Loading...</span>
+                        <span class="stat-label">Total Startups</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="total-batches">-</span>
+                        <span class="stat-label">Batches</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="total-industries">-</span>
+                        <span class="stat-label">Industries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="last-updated">-</span>
+                        <span class="stat-label">Last Updated</span>
+                    </div>
+                </div>
+                <div class="api-source">
+                    <p>📡 Data Source: <a href="https://github.com/yc-oss/api" target="_blank">YC OSS API</a> (Updates Daily)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by company name, description, or founder...">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div class="filter-controls">
+                <select id="batch-filter" class="filter-select">
+                    <option value="all">All Batches</option>
+                </select>
+
+                <select id="industry-filter" class="filter-select">
+                    <option value="all">All Industries</option>
+                </select>
+
+                <select id="status-filter" class="filter-select">
+                    <option value="all">All Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Acquired">Acquired</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Public">Public (IPO)</option>
+                </select>
+
+                <select id="location-filter" class="filter-select">
+                    <option value="all">All Locations</option>
+                </select>
+
+                <button id="reset-filters" class="reset-btn">Reset Filters</button>
+                <button id="refresh-data" class="refresh-btn">🔄 Refresh Data</button>
+            </div>
+        </div>
+
+        <!-- Results Count -->
+        <div class="results-info">
+            <span id="results-count">Showing 0 of 0 startups</span>
+            <div class="view-controls">
+                <button id="view-mode-table" class="view-btn active">📊 Table</button>
+                <button id="view-mode-grid" class="view-btn">🎴 Grid</button>
+                <button id="export-btn" class="export-btn">📥 Export CSV</button>
+            </div>
+        </div>
+
+        <!-- Table View -->
+        <div class="table-container" id="table-view">
+            <table id="startups-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('name')">Company ↕</th>
+                        <th onclick="sortTable('batch')">Batch ↕</th>
+                        <th>Industry</th>
+                        <th>Location</th>
+                        <th onclick="sortTable('status')">Status ↕</th>
+                        <th>Team Size</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Grid View -->
+        <div class="grid-container" id="grid-view" style="display: none;">
+            <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading startup data from YC API...</p>
+            <p class="loading-sub">Fetching 5,500+ companies • This may take a moment</p>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>😕 No startups match your filters</p>
+            <button onclick="resetFilters()" class="reset-btn">Reset Filters</button>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+            <button id="prev-page" class="page-btn">← Previous</button>
+            <span id="page-info">Page 1 of 1</span>
+            <button id="next-page" class="page-btn">Next →</button>
+        </div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="api-app.js"></script>
+</body>
+</html>
