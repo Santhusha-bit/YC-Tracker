@@ -1,11 +1,11 @@
 # Y Combinator Startup Tracker - Real-Time Edition
 
-### LIVE NOW 🚀 : https://santhusha-bit.github.io/YC-Tracker
+### LIVE NOW : https://santhusha-bit.github.io/YC-Tracker
 
-## ✨ Overview
+## Overview
 A comprehensive, real-time dashboard tracking **ALL 5,500+ Y Combinator startups** from Summer 2005 to present, with automatic daily updates.
 
-## 🎯 Key Features
+## Key Features
 
 ### Real-Time Data
 - **5,500+ Startups** - Complete YC portfolio
@@ -15,7 +15,7 @@ A comprehensive, real-time dashboard tracking **ALL 5,500+ Y Combinator startups
 - **No Manual Updates Needed** - Pulls latest data automatically
 
 ### Data Source
-📡 **API:** [YC OSS Public API](https://github.com/yc-oss/api)
+**API:** [YC OSS Public API](https://github.com/yc-oss/api)
 - Updates: Daily via GitHub Actions
 - Method: Official YC Algolia search index (not scraping)
 - Reliability: 99.9% uptime
@@ -30,7 +30,7 @@ A comprehensive, real-time dashboard tracking **ALL 5,500+ Y Combinator startups
 ✅ **Export Data** - Download filtered results as CSV  
 ✅ **Detailed Views** - Click any startup for full information  
 
-## 🚀 Live Now
+## Live Now
 
 **No installation, no backend, no API keys needed!**
 
@@ -50,26 +50,26 @@ Type in the search bar:
 
 ### View Modes
 
-#### 📊 Table View (Default)
+#### Table View (Default)
 - Compact data display
 - Quick scanning
 - Sortable columns
 - Best for analysis
 
-#### 🎴 Grid View
+#### Grid View
 - Visual cards with logos
 - Rich descriptions
 - Better for browsing
 - Great for discovery
 
 ### Data Export
-Click **"📥 Export CSV"** to download:
+Click **"Export CSV"** to download:
 - All currently filtered startups
 - Complete information
 - Ready for Excel/Google Sheets
 - Perfect for analysis
 
-## 📊 Data Included
+## Data Included
 
 ### For Each Startup
 - ✅ Company name
@@ -107,7 +107,7 @@ Click **"📥 Export CSV"** to download:
 - Dropbox (2018)
 - GitLab (2021)
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Technologies
 - **Pure JavaScript** (no frameworks)
@@ -129,19 +129,19 @@ Click **"📥 Export CSV"** to download:
 ✅ Opera  
 ✅ Mobile browsers  
 
-## 📱 Mobile Responsive
+## Mobile Responsive
 Fully optimized for:
-- 📱 Phones (320px+)
-- 📲 Tablets (768px+)
-- 💻 Laptops (1024px+)
-- 🖥️ Desktops (1440px+)
+-  Phones (320px+)
+-  Tablets (768px+)
+-  Laptops (1024px+)
+-  Desktops (1440px+)
 
-## 🔄 Data Updates
+## Data Updates
 
 ### Automatic Updates
 The dashboard **automatically fetches the latest data** every time you:
 - Open the page
-- Click "🔄 Refresh Data"
+- Click "Refresh Data"
 - Reload your browser
 
 ### Update Frequency
@@ -157,33 +157,33 @@ The dashboard **automatically fetches the latest data** every time you:
 ✅ Founder details  
 ✅ Industry tags  
 
-## 💡 Use Cases
+##  Use Cases
 
 ### For Investors
-- 🔍 Deal sourcing and pipeline building
-- 📊 Market trend analysis
-- 🎯 Competitor research
-- 📈 Industry mapping
+-  Deal sourcing and pipeline building
+-  Market trend analysis
+-  Competitor research
+-  Industry mapping
 
 ### For Job Seekers
-- 💼 Find YC companies hiring
-- 🌍 Search by location
-- 🏢 Discover startups in your industry
-- 🚀 Track latest batches
+-  Find YC companies hiring
+-  Search by location
+-  Discover startups in your industry
+-  Track latest batches
 
 ### For Founders
-- 🎓 Study successful startups
-- 📝 Research competition
-- 🤝 Find potential partners
-- 💡 Identify market gaps
+-  Study successful startups
+-  Research competition
+-  Find potential partners
+-  Identify market gaps
 
 ### For Researchers
-- 📊 Ecosystem analysis
-- 📈 Trend identification
-- 🌐 Geographic distribution
-- 🏆 Success pattern recognition
+-  Ecosystem analysis
+-  Trend identification
+-  Geographic distribution
+-  Success pattern recognition
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 Planned features:
 - [ ] Founder profiles with LinkedIn
@@ -194,7 +194,7 @@ Planned features:
 - [ ] Success rate calculations
 - [ ] Founder networks visualization
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Data Not Loading?
 1. Check internet connection
@@ -212,7 +212,7 @@ Planned features:
 2. Allow popups for this site
 3. Try different browser
 
-## 📊 Statistics
+## Statistics
 
 As of latest update:
 - **Total Startups**: 5,521
@@ -221,16 +221,16 @@ As of latest update:
 - **Combined Valuation**: $600B+
 - **Countries Represented**: 100+
 
-## 🙏 Credits
+## Credits
 
 **Data Source**: [YC OSS API](https://github.com/yc-oss/api) by Y Combinator  
 **Built with**: Vanilla JavaScript, HTML5, CSS3  
 
-## 📄 License
+## License
 
 This dashboard is open source and free to use. The data is provided by Y Combinator's public API.
 
-## 🔗 Useful Links
+## Useful Links
 
 - [Y Combinator Official](https://www.ycombinator.com)
 - [YC Startup Directory](https://www.ycombinator.com/companies)
