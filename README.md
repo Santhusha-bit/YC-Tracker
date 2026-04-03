@@ -1,7 +1,5 @@
 # Y Combinator Startup Tracker - Real-Time Edition
 
-### LIVE NOW : https://santhusha-bit.github.io/YC-Tracker
-
 ## Overview
 A comprehensive, real-time dashboard tracking **ALL 5,500+ Y Combinator startups** from Summer 2005 to present, with automatic daily updates.
 
